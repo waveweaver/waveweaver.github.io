@@ -1,0 +1,47 @@
+{
+  "name": "Harsha Guntaka",
+  "title": "Software Engineer | Full Stack AI Products | Agentic AI",
+  "summary": "Software Engineer with 4+ years building full stack AI products and backend services. I own delivery from ambiguous requirements and prototypes through React/TypeScript interfaces, Python APIs, PostgreSQL models, and deployment. I use RAG, agents, product feedback, evaluations, and performance data to improve usability and reliability.",
+  "location": "Warren, NJ",
+  "readouts": [
+    {
+      "value": "38% → 71%",
+      "label": "weekly active usage of enabled users at Airspan"
+    },
+    {
+      "value": "82% → 94%",
+      "label": "agent task completion after evaluation-led fixes"
+    },
+    {
+      "value": "800 → 310 ms",
+      "label": "p95 API latency at Rakuten Symphony"
+    },
+    {
+      "value": "4+ yrs",
+      "label": "building full stack AI and backend products"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/harsha-guntaka-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/waveweaver",
+    "linkedin": "https://linkedin.com/in/harshaguntaka/",
+    "email": "harsha.guntaka31@gmail.com",
+    "phone": "201-589-8827"
+  }
+}

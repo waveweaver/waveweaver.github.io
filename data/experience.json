@@ -1,0 +1,56 @@
+{
+  "roles": [
+    {
+      "company": "Airspan Networks",
+      "logo": "assets/images/logos/airspan-networks.svg",
+      "title": "Software Engineer, AI Product Engineering",
+      "start": "Sep 2024",
+      "end": "Present",
+      "description": "Works on the Network Investigation Workspace, an AI product for incident investigation, evidence retrieval, and saved findings.",
+      "highlights": [
+        "Owned full stack delivery from product discovery to production, building React/TypeScript interfaces, Python/FastAPI services, and PostgreSQL data models for evidence-backed incident investigations.",
+        "Iterated on streaming answers, inspectable citations, and visible progress using pilot feedback; increased weekly active usage from 38% to 71% of enabled users.",
+        "Built LangGraph workflows for evidence retrieval and diagnostic tool calls with durable checkpoints, approval validation, and stable operation identifiers to avoid duplicate execution.",
+        "Evaluated retrieval quality, agent tool selection, and argument validity on held-out tasks; improved context selection and validation, increasing task completion from 82% to 94%.",
+        "Delivered AWS releases with Docker, GitHub Actions, and regression tests; monitored errors and latency and verified AI-assisted code changes through review and integration testing."
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "LangGraph",
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "Integration testing"
+      ]
+    },
+    {
+      "company": "Rakuten Symphony",
+      "logo": "assets/images/logos/rakuten-symphony.png",
+      "title": "Member of Technical Staff, Backend Systems",
+      "start": "Dec 2021",
+      "end": "Aug 2023",
+      "description": "Worked on the Infrastructure Investigation Dashboard, a web product for event visibility, diagnostics, and investigation workflows.",
+      "highlights": [
+        "Built Python REST APIs and asynchronous workers to ingest infrastructure events, validate schemas, and preserve searchable PostgreSQL event histories.",
+        "Developed React/TypeScript interfaces with live processing status, event filters, and failure drilldowns to streamline operational investigations.",
+        "Designed restart-safe processing with stable event identifiers, PostgreSQL uniqueness constraints, and bounded retry handling.",
+        "Investigated inefficient SQL queries and missing indexes, reducing p95 API latency from 800 ms to 310 ms under the measured workload.",
+        "Added pytest integration tests and automated release checks to catch regressions in event ingestion, persistence, and API behavior."
+      ],
+      "technologies": [
+        "Python",
+        "REST APIs",
+        "Asynchronous workers",
+        "PostgreSQL",
+        "SQL",
+        "React",
+        "TypeScript",
+        "pytest"
+      ]
+    }
+  ]
+}

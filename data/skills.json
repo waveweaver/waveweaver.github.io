@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "name": "Languages & Frontend",
+      "items": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "React",
+        "Responsive interfaces",
+        "Server-Sent Events (SSE)"
+      ]
+    },
+    {
+      "name": "Backend & Data",
+      "items": [
+        "FastAPI",
+        "REST APIs",
+        "PostgreSQL",
+        "Redis",
+        "pgvector",
+        "Data modeling",
+        "Asynchronous workers"
+      ]
+    },
+    {
+      "name": "AI Product Engineering",
+      "items": [
+        "LLM APIs",
+        "RAG",
+        "LangGraph",
+        "Tool calling",
+        "Agent workflows",
+        "Prompt orchestration",
+        "Evaluations"
+      ]
+    },
+    {
+      "name": "Cloud & Quality",
+      "items": [
+        "AWS",
+        "Docker",
+        "GitHub Actions",
+        "CI/CD",
+        "pytest",
+        "Integration tests",
+        "Observability",
+        "Latency optimization",
+        "AI coding agents"
+      ]
+    }
+  ]
+}

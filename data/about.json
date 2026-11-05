@@ -1,0 +1,41 @@
+{
+  "paragraphs": [
+    "I build full stack AI products and the backend services behind them. At Airspan Networks I own an incident-investigation workspace end to end, from product discovery to production, using React/TypeScript, Python/FastAPI and PostgreSQL.",
+    "I treat AI features as products that need measurement. I iterate with pilot feedback and evaluate retrieval quality, agent tool selection and argument validity on held-out tasks. That work took task completion from 82% to 94% and weekly active usage from 38% to 71% of enabled users.",
+    "Earlier, at Rakuten Symphony, I built Python REST APIs, asynchronous workers and React dashboards for infrastructure events. I also cut p95 API latency from 800 ms to 310 ms by fixing inefficient SQL queries and missing indexes."
+  ],
+  "highlights": [
+    {
+      "label": "Focus",
+      "value": "Full stack AI products, agentic AI"
+    },
+    {
+      "label": "Current",
+      "value": "Software Engineer, Airspan Networks"
+    },
+    {
+      "label": "Base",
+      "value": "Warren, NJ"
+    },
+    {
+      "label": "Experience",
+      "value": "4+ years"
+    },
+    {
+      "label": "Core stack",
+      "value": "React, TypeScript, Python, FastAPI, PostgreSQL"
+    },
+    {
+      "label": "AI tooling",
+      "value": "RAG, LangGraph, tool calling, evaluations"
+    },
+    {
+      "label": "Degree",
+      "value": "M.S. Computer Science, University of Bridgeport"
+    },
+    {
+      "label": "Certificate",
+      "value": "Data Science, IIIT Bangalore"
+    }
+  ]
+}

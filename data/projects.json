@@ -1,0 +1,245 @@
+{
+  "projects": [
+    {
+      "name": "3GPP RAG",
+      "category": "AI / RAG",
+      "description": "A local question-answering system over 3GPP technical specifications. It combines BM25 sparse retrieval and ChromaDB vector search, fused with Reciprocal Rank Fusion, and answers with a local LLM through Ollama.",
+      "highlights": [
+        "Parses .docx and .pdf specs into 1,000-character chunks with 200 overlap, then indexes them for both retrievers.",
+        "Fetches 6 candidates per retriever and sends the top 5 chunks to the LLM after fusion.",
+        "Runs fully locally with Ollama (llama3.2:3b for answers, nomic-embed-text for embeddings)."
+      ],
+      "technologies": [
+        "Python",
+        "ChromaDB",
+        "BM25",
+        "Ollama",
+        "LangChain",
+        "RAG"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/3gpp-rag"
+      },
+      "image": "assets/images/projects/3gpp-rag.svg",
+      "featured": true,
+      "hero": {
+        "src": "assets/images/projects/3gpp-rag-hero.jpg",
+        "alt": "3GPP RAG — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "RAG Fundamentals Lab",
+      "category": "AI / RAG",
+      "description": "A collection of Python utilities and demos covering each stage of a retrieval-augmented generation pipeline: document parsers, chunkers, vector stores, hybrid search and end-to-end RAG with Ollama.",
+      "highlights": [
+        "A chunking tool with 8 strategies, from fixed-size and sliding window to section-based and token-based.",
+        "Parsers for PDF, Word, CSV and plain text, with metadata and JSON output for ingestion.",
+        "Progressively richer RAG apps with source citation and BM25 plus vector search fused by RRF."
+      ],
+      "technologies": [
+        "Python",
+        "ChromaDB",
+        "FAISS",
+        "Ollama",
+        "BM25",
+        "LangChain"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/rag-fundamentals-lab"
+      },
+      "image": "assets/images/projects/rag-fundamentals-lab.svg",
+      "featured": true,
+      "hero": {
+        "src": "assets/images/projects/rag-fundamentals-lab-hero.jpg",
+        "alt": "RAG Fundamentals Lab — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "resumable",
+      "category": "Real-time systems",
+      "description": "Server-sent events with a real Last-Event-ID contract over a bounded replay buffer. When the resume point has been evicted, the server sends an explicit GAP signal, so a reconnecting client never silently skips events.",
+      "highlights": [
+        "In a seeded demo, 24,540 events were published during repeated reconnects; this implementation delivered all of them.",
+        "A test suite checks 1,000 scripted disconnects for zero lost events, zero duplicates and strict ordering.",
+        "Three distinct resume outcomes: FRESH, RESUMED and GAP."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Server-Sent Events",
+        "Last-Event-ID",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/resumable",
+        "demo": "https://waveweaver.github.io/resumable/"
+      },
+      "image": "assets/images/projects/resumable.svg",
+      "hero": {
+        "src": "assets/images/projects/resumable-hero.jpg",
+        "alt": "resumable — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "locksmith",
+      "category": "Developer tools",
+      "description": "A migration linter that parses PostgreSQL migration SQL and predicts which lock each statement takes, whether it blocks reads or writes on the target server version, and roughly how long it holds the lock on a table of a given size.",
+      "highlights": [
+        "Classifies statements into 18 operation kinds and encodes the lock conflict matrix as data.",
+        "In the demo, a 400M-row table's total write-blocking time is 56.7 min on PostgreSQL 10 and 6.7 min on PostgreSQL 16.",
+        "41 tests; unrecognised statements are treated as worst case, never as safe."
+      ],
+      "technologies": [
+        "TypeScript",
+        "PostgreSQL",
+        "SQL",
+        "Node.js",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/locksmith"
+      },
+      "image": "assets/images/projects/locksmith.svg",
+      "hero": {
+        "src": "assets/images/projects/locksmith-hero.jpg",
+        "alt": "locksmith — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "onespec",
+      "category": "Developer tools",
+      "description": "One declarative spec produces a compiled client validator, an interpreted server validator and SQL CHECK constraints. A property-based parity suite shows all three accept and reject exactly the same rows.",
+      "highlights": [
+        "10,000-row three-way parity test across client, server and SQL targets.",
+        "Cross-field rules (requiredIf, lessThanOrEqual) that hold in all three targets.",
+        "Three deliberately different implementations, and a mutation test showing the parity check detects drift."
+      ],
+      "technologies": [
+        "TypeScript",
+        "SQL",
+        "SQLite",
+        "Property-based testing",
+        "Node.js"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/onespec"
+      },
+      "hero": {
+        "src": "assets/images/projects/onespec-hero.jpg",
+        "alt": "onespec — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "consentpath",
+      "category": "Security & data",
+      "description": "Clinical trial data access where authorisation is decided by the data layer: security views keyed on session claims, with a negative-authorisation test matrix. The reference design is PostgreSQL row-level security; this repo uses SQLite views to build the same shape.",
+      "highlights": [
+        "Site isolation, column-level blinding of arm assignment, delegated monitor grants and consent-gated export.",
+        "A 32-case matrix (4 roles x 2 sites x 4 participants) asserts denials as well as permits.",
+        "Append-only access log enforced by triggers; 16 tests."
+      ],
+      "technologies": [
+        "TypeScript",
+        "SQL",
+        "SQLite",
+        "Authorisation",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/consentpath",
+        "demo": "https://waveweaver.github.io/consentpath/"
+      },
+      "image": "assets/images/projects/consentpath.svg",
+      "hero": {
+        "src": "assets/images/projects/consentpath-hero.jpg",
+        "alt": "consentpath — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "gridboard",
+      "category": "Real-time systems",
+      "description": "A backpressure-aware telemetry buffer for grid dispatch consoles. Under overload it downsamples visibly, always keeps the newest sample, and marks values STALE instead of showing old data as live.",
+      "highlights": [
+        "Under a 10x overload the bounded buffer detected 4/4 injected faults; an unbounded queue detected 0/4.",
+        "Peak queue of 64 samples versus 18,001 for the unbounded baseline.",
+        "A seeded fault simulator makes every run reproducible; 16 tests."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Backpressure",
+        "Simulation",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/gridboard",
+        "demo": "https://waveweaver.github.io/gridboard/"
+      },
+      "image": "assets/images/projects/gridboard.svg",
+      "hero": {
+        "src": "assets/images/projects/gridboard-hero.jpg",
+        "alt": "gridboard — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "ratevault",
+      "category": "Backend & data modeling",
+      "description": "A motor insurance quote engine with bitemporal rate tables, so any past quote can be repriced exactly using the rates and rules in force at the time. Each rate carries a valid-time and a transaction-time range, and rows are closed, never updated or deleted.",
+      "highlights": [
+        "Separates what was quoted (GBP 1995.19 in the demo) from what should have been quoted after a backdated correction (GBP 1671.64).",
+        "A database trigger rejects overlapping valid-time ranges, and issuance is idempotent on a client token."
+      ],
+      "technologies": [
+        "TypeScript",
+        "SQLite",
+        "Bitemporal data",
+        "Node.js",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/ratevault",
+        "demo": "https://waveweaver.github.io/ratevault/"
+      },
+      "image": "assets/images/projects/ratevault.svg",
+      "hero": {
+        "src": "assets/images/projects/ratevault-hero.jpg",
+        "alt": "ratevault — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "blastgraph",
+      "category": "Security",
+      "description": "Cloud IAM analysis that models an estate as a privilege graph and finds multi-hop escalation paths to crown-jewel resources. It ranks which single permission to remove to break the most paths.",
+      "highlights": [
+        "On a sample estate of 14 principals, 19 edges and 3 crown jewels, it reports 6 paths for an outside attacker.",
+        "Removing the top-ranked edge eliminates 6/6 paths (100%).",
+        "Reachability is a single recursive SQL query with a cycle guard and hop limit."
+      ],
+      "technologies": [
+        "TypeScript",
+        "SQLite",
+        "Recursive SQL",
+        "Graph analysis",
+        "GitHub Actions"
+      ],
+      "links": {
+        "source": "https://github.com/waveweaver/blastgraph",
+        "demo": "https://waveweaver.github.io/blastgraph/"
+      },
+      "image": "assets/images/projects/blastgraph.svg",
+      "hero": {
+        "src": "assets/images/projects/blastgraph-hero.jpg",
+        "alt": "blastgraph — Concept render",
+        "caption": "Concept render"
+      }
+    }
+  ]
+}
